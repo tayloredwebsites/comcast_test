@@ -17,3 +17,5 @@ issues_url 'https://github.com/tayloredwebsites/comcast_test/issues' if respond_
 # a Supermarket.
 #
 source_url 'https://github.com/tayloredwebsites/comcast_test' if respond_to?(:source_url)
+
+depends 'selinux_policy', '= 0.3.0'

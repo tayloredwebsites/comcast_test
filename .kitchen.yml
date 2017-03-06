@@ -1,6 +1,9 @@
 ---
 driver:
   name: vagrant
+  network:
+    - ["forwarded_port", {guest: 80, host: 40080}]
+    - ["forwarded_port", {guest: 443, host: 40443}]
 
 provisioner:
   name: chef_zero
