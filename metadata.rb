@@ -1,10 +1,10 @@
 name 'comcast_test'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Dave Taylor'
+maintainer_email 'tayloredwebsites@me.com'
 license 'all_rights'
 description 'Installs/Configures comcast_test'
 long_description 'Installs/Configures comcast_test'
-version '0.1.0'
+version '0.1.1'
 
 # The `issues_url` points to the location where issues for this cookbook are
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
@@ -18,4 +18,4 @@ issues_url 'https://github.com/tayloredwebsites/comcast_test/issues' if respond_
 #
 source_url 'https://github.com/tayloredwebsites/comcast_test' if respond_to?(:source_url)
 
-depends 'selinux_policy', '= 0.3.0'
+depends 'apache2', '~> 3.2.2'

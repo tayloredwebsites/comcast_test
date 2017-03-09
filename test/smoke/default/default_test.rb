@@ -11,12 +11,3 @@ unless os.windows?
   end
 end
 
-describe command('curl localhost') do
-  its(:stdout) { should match(/SRE CHALLENGE/)}
-end
-
-
-describe port(80) do
-  it { should be_listening }
-end
-
