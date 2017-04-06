@@ -22,6 +22,7 @@ suites:
   - name: default
     run_list:
       - recipe[comcast_test::default]
+      - recipe[comcast_test::ssl_certificate]
       - recipe[comcast_test::apache2]
     verifier:
       inspec_tests:

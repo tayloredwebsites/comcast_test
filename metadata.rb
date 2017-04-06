@@ -19,3 +19,4 @@ issues_url 'https://github.com/tayloredwebsites/comcast_test/issues' if respond_
 source_url 'https://github.com/tayloredwebsites/comcast_test' if respond_to?(:source_url)
 
 depends 'apache2', '~> 3.2.2'
+depends 'ssl_certificate', '~> 2.1.0'
